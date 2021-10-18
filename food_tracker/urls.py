@@ -18,6 +18,8 @@ from django.urls import path
 from django.conf.urls import include, url
 from django.contrib.auth import views as auth_views
 
+from django.urls import reverse_lazy
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^', include(('food.urls', 'food'), namespace="food")), #/food/urls.py
